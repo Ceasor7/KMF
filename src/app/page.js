@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import AboutUs from './sections/AboutUs'
 import Festival from './sections/Festival'
@@ -20,6 +21,7 @@ const Home = () => {
       <section id='gallery'>
       <Gallery />
       </section>
+      <Footer />
     </div>
   )
 }

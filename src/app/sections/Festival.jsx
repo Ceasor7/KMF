@@ -1,48 +1,21 @@
+import { InfiniteSlider } from "@/components/Carousel"
+import DescriptionCard from "@/components/DescriptionCard"
 
 const Festival = () => {
     return (
-      <div className="min-h-screen flex flex-col ">
-      <div className="flex flex-col sm:flex-row">
-      
-      <div className="flex-1 p-4">
-        <section>
-          <img src="/home.jpg" alt="Image 1" className="w-90 h-32 object-cover mb-4" />
-          <h1 className="text-xl font-bold font-custom mb-2">Title 1</h1>
-          <p className="font-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            consectetur turpis et velit fermentum, vel cursus massa gravida.</p>
-        </section>
+      <div className="min-h-screen flex justify-center flex-wrap gap-9 py-2 px-12 my-1 scroll-smooth ">
+      <div className='flex flex-col justify-center text-center gap-6'>
+          <h2 className='text-4xl tracking-[20px] font-custom font-medium text-black'>
+          About <span className='text-[#D82026]'> Us </span>
+        </h2>
       </div>
-  
-      
-      <div className="flex-1 p-4">
-        <section>
-          <img src="/home.jpg" alt="Image 2" className="w-90 h-32 object-cover mb-4" />
-          <h1 className="text-xl font-bold font-custom mb-2">Title 2</h1>
-          <p className="font-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            consectetur turpis et velit fermentum, vel cursus massa gravida.</p>
-        </section>
+      <div className="mt-5 grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 sm:gap-6 gap-14">
+        <DescriptionCard />
+        <DescriptionCard />
+        <DescriptionCard />
       </div>
-  
-      
-      <div className="flex-1 p-4">
-        <section>
-          <img src="/home.jpg" alt="Image 3" className="w-90 h-32 object-cover mb-4" />
-          <h1 className="text-xl font-bold font-custom mb-2">Title 3</h1>
-          <p className="font-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            consectetur turpis et velit fermentum, vel cursus massa gravida.</p>
-        </section>
-      </div>
-    </div>
     <hr className="text-black py-3 px-3"/>
-    <div className="flex flex-row items-center justify-center">
-    <img src="/home.jpg" alt="Image 3" className="w-40 h-32 object-cover mb-4" />
-    <img src="/home.jpg" alt="Image 3" className="w-40 h-32 ml-5 object-cover mb-4" />
-    <img src="/home.jpg" alt="Image 3" className="w-40 h-32 ml-5 object-cover mb-4" />
-    <img src="/home.jpg" alt="Image 3" className="w-40 h-32 ml-5 object-cover mb-4" />
-    <img src="/home.jpg" alt="Image 3" className="w-40 h-32 ml-5 object-cover mb-4" />
-    <img src="/home.jpg" alt="Image 3" className="w-40 h-32 ml-5 object-cover mb-4" />
-  
-    </div>
+    <InfiniteSlider />
     <hr/>
   </div>
      

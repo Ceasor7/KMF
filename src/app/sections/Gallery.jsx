@@ -1,64 +1,22 @@
+import DescriptionCard from "@/components/DescriptionCard"
 
-const Gallery = () => {
+const Festival = () => {
     return (
-      <div className="h-screen mt-20 flex flex-col ">
-      <div className="flex">
-      <div className="flex-1 p-4">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Placeholder Image"
-          className="mb-4"
-        />
-        <h1 className="text-2xl font-bold mb-2 font-custom">Column 1</h1>
-        <p className="text-black font-custom">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur turpis et velit fermentum, vel cursus massa gravida.
-        </p>
+      <div className="min-h-screen flex justify-center flex-wrap gap-9 py-2 px-12 my-1 scroll-smooth ">
+      <div className='flex flex-col justify-center text-center gap-6'>
+          <h2 className='text-4xl tracking-[20px] font-custom font-medium text-[#D82026]'>
+          Gallery
+        </h2>
       </div>
-  
-      <div className="flex-1 p-4">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Placeholder Image"
-          className="mb-4"
-        />
-        <h1 className="text-2xl font-bold mb-2 font-custom">Column 2</h1>
-        <p className="text-black font-custom">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur turpis et velit fermentum, vel cursus massa gravida.
-        </p>
+      <div className="mt-5 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14">
+        <DescriptionCard />
+        <DescriptionCard />
+        <DescriptionCard />
+        <DescriptionCard />
       </div>
-    </div>
-    <div className="flex">
-      <div className="flex-1 p-4">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Placeholder Image"
-          className="mb-4"
-        />
-        <h1 className="text-2xl font-bold mb-2 font-custom">Column 1</h1>
-        <p className="text-black font-custom">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur turpis et velit fermentum, vel cursus massa gravida.
-        </p>
-      </div>
-  
-      <div className="flex-1 p-4">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Placeholder Image"
-          className="mb-4"
-        />
-        <h1 className="text-2xl font-bold mb-2 font-custom">Column 2</h1>
-        <p className="text-black font-custom">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur turpis et velit fermentum, vel cursus massa gravida.
-        </p>
-      </div>
-    </div>
-      </div>
-      
+  </div>
+     
     )
   }
   
-  export default Gallery
+  export default Festival
