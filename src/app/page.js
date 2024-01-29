@@ -1,8 +1,8 @@
+import { InfiniteSlider } from '@/components/Carousel'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import AboutUs from './sections/AboutUs'
 import Festival from './sections/Festival'
-import Gallery from './sections/Gallery'
 import Hero from './sections/Hero'
 
 const Home = () => {
@@ -15,11 +15,11 @@ const Home = () => {
       <section id='about'>
         <AboutUs />
       </section>
-      <section id='festival'>
+      <section id='venues'>
       <Festival />
       </section>
-      <section id='gallery'>
-      <Gallery />
+      <section className='py-8'>
+      <InfiniteSlider />
       </section>
       <Footer />
     </div>

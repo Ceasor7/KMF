@@ -1,5 +1,4 @@
 import CountdownTimer from "@/components/CountdownTimer";
-import Theme from "@/components/Theme";
 
 const AboutUs = () => {
 
@@ -15,21 +14,15 @@ const AboutUs = () => {
       <CountdownTimer targetDate={targetDate} />
       </div>
       </div>
-      <div className="flex flex-col sm:flex-row py-16 items-center justify-between">
-        <div className="sm:ml-60">
-        <h1 className="font-custom text-4xl">About Us</h1>
+      <div className="flex flex-col py-16 mb-5 mx-5 sm:mx-20 sm:px-12">
+        <div className="mb-5">
+        <h1 className="font-custom text-4xl text-center">Summary Background</h1>
         </div>
-        <div className="sm:mr-36">
-        <Theme />
+        <div className="flex items-center">
+        <p className="font-custom leading-relaxed text-left sm:text-center">
+        The Kenya Music Festival (KMF) is an annual talent development initiative overseen by the Ministry of Education and regarded as the largest festival of its kind in East and Central Africa. With over 600 competitive categories spanning music, dance, and elocution, it attracts more than 3 million participants from educational institutions nationwide, serving as a platform to instill positive values and address societal issues among the youth. His Excellency, The President of the Republic of Kenya, serves as the festival's Patron, while an Executive Committee appointed by the Cabinet Secretary manages its affairs, with technical support from the Directorate for Field Coordination and Co-curricular Activities. Since 1948, preliminary performances have been held at district (now county) and provincial (now regional) venues, culminating in a national event initially held at the Kenya National Theatre and later at the KICC in Nairobi. However, starting in 2006, the national level has been rotated among different regions to broaden accessibility.
+        </p>
         </div>
-      </div>
-      <div className="bg-black my-5 px-4 text-white py-20">
-      <div>
-      <h1 className="font-custom text-4xl text-center">Our Mandate</h1>
-      </div>
-      <div className="sm:px-32 sm:mx-20">
-      <p className="font-custom text-left"> Talent Development For The Growth Of The Creative Economy Talent Development For The Growth Of The Creative Economy Talent Development For The Growth Of The Creative Economy Talent Development For The Growth Of The Creative Economy</p>
-      </div>       
       </div>
   
       </div>

@@ -1,16 +1,21 @@
 
-const DescriptionCard = () => {
+const DescriptionCard = ({ image, title, description, /*buttonLabel */ }) => {
   return (
-    <div className='flex-1 w-full rounded-[10px] shadow-3xl px-10 py-16 mb-2 '>
-      <div className=' w-50 h-35 flex justify-center items-center outline outline-2 outline-white'>
-        <img src="/KMF.jpg" alt="KMF LOGO" className='object-cover' />
+    <div>
+      <div className=' w-50 h-35 flex justify-center items-center'>
+        <img src={image} alt={title} className='object-cover w-full' />
       </div>
-      <h3 className='mt-5 font-palanquin text-2xl leading-normal font-bold text-black'>
-        Title one
+      <h3 className='font-custom text-2xl leading-normal font-bold text-black'>
+      {title}
       </h3>
-      <p className='mt-3 break-words font-montserrat text-base leading-normal text-black'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur turpis et velit fermentum, vel cursus massa gravida.
+      <p className='break-words font-custom leading-relaxed text-base text-black'>
+      {description}
       </p>
+      {/*<div className="px-6 py-4">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          {buttonLabel}
+        </button>
+      </div> */}
     </div>
   )
 }

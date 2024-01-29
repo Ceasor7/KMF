@@ -50,10 +50,10 @@ const [nav, setNav] = useState(false);
           <Link href={"/"}>Home</Link>
         </li>
         <li className="px-2 font-custom text-md">
-          <Link href={"#festival"}>Festival</Link>
+          <Link href={"#festival"}>Venues</Link>
         </li>
         <li className="px-2 font-custom text-md">
-          <Link href={"#gallery"}>Gallery</Link>
+          <Link href={"/about"}>About Us</Link>
         </li>
         <li className="px-2 font-custom text-md">
           <Link href={"/contact"}>Contact</Link>
@@ -70,8 +70,8 @@ const [nav, setNav] = useState(false);
       {nav && (
         <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#733612] to-[#D9430D] text-white">
           <a href="/" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Home </a>
-          <a href="/about" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> About </a>
-          <a href="/festival" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Festival </a>
+          <a href="#venues" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Venues </a>
+          <a href="/about" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> About Us  </a>
           <a href="/gallery" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Gallery </a>
           <a href="/contact" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Contact </a>
         </div>
@@ -95,10 +95,10 @@ function NavbarScroll({ isScrolling }) {
           <Link href={"/"}>Home</Link>
         </li>
         <li className="px-2 font-custom text-white text-md">
-          <Link href={"#festival"}>Festival</Link>
+          <Link href={"#festival"}>Venues</Link>
         </li>
         <li className="px-2 font-custom text-white text-md">
-          <Link href={"#gallery"}>Gallery</Link>
+          <Link href={"/about"}>About</Link>
         </li>
         <li className="px-2 font-custom text-white text-md">
           <Link href={"/contact"}>Contact</Link>

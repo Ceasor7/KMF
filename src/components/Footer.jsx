@@ -2,10 +2,10 @@ import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#733612] text-white p-6">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-[#733612] text-white p-6 ">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         
-        <div className="mb-4 sm:mb-4">
+        <div className="mb-4 sm:ml-28 sm:mb-4">
           <h2 className="text-lg font-semibold font-custom mb-2">Event Name</h2>
           <p className="text-sm font-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>

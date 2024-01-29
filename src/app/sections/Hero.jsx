@@ -21,7 +21,7 @@ export default function Hero() {
         transition={{ duration: 1.8 }}
       className="flex flex-col sm:space-x-20 sm:p-8 sm:mb-14 sm:flex-row">
      <div className="flex flex-col justify-center text-center sm:mb-4 mb-5 ">
-      <h1 className="text-4xl font-custom tracking-[7px]">Kenya Music <br /><span>Festival 2024</span></h1>
+      <h1 className="text-4xl font-custom font-bold tracking-[7px]">Kenya Music <br /><span>Festival 2024</span></h1>
      </div>
      <div className="h-full border-r-4 border-[#D82026]"></div>
      <Theme/>

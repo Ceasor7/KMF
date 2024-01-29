@@ -5,8 +5,9 @@ import { useEffect, useState } from "react";
 
 const images = [
   "/home.jpg",
-  "/home.jpg",
-  "/home.jpg",
+  "/home1.jpg",
+  "/home2.jpg",
+  "/home3.jpg",
 ];
 
 const ImageSlider = () => {
