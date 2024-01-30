@@ -1,8 +1,26 @@
+'use client'
+import { motion, useScroll } from "framer-motion"
+import { useEffect, useRef } from "react"
 import Button from "./button"
 
 const FullBackground = () => {
+
+  const element = useRef(null)
+  const {scrollYProgress} = useScroll({
+    target: element,
+    offset: ['start 0.9','start 0.25']
+  })
+
+  useEffect ( () => {
+    scrollYProgress.on("change", e=> console.log(e))
+  }, [])
+
+
   return (
-    <div className="flex flex-col py-7 mb-5 mx-5 sm:mx-20 sm:px-12">
+    <motion.div
+    ref={element}
+    style={{opacity: scrollYProgress}}
+     className="flex flex-col py-7 mb-5 mx-5 sm:mx-20 sm:px-12">
     <h2 className='text-2xl sm:text-4xl text-center tracking-[8px] font-custom font-medium text-[#D82026]'> Full Background</h2>
     <div>
     <h3 className="font-custom font-semibold">About</h3>
@@ -24,7 +42,7 @@ const FullBackground = () => {
     </p>
     <Button>More Details</Button>
     </div>
-    </div>
+    </motion.div>
   )
 }
 
