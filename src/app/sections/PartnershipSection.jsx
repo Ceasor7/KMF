@@ -1,5 +1,5 @@
 
-const Partnership = () => {
+const PartnershipSection = () => {
   return (
     <div className="flex flex-col py-6 mb-10 mx-5 sm:mx-20 sm:px-12">
     <h2 className="text-2xl sm:text-4xl text-center tracking-[8px] font-custom font-medium text-white mb-4">Partnership</h2>
@@ -19,4 +19,4 @@ const Partnership = () => {
   )
 }
 
-export default Partnership
+export default PartnershipSection

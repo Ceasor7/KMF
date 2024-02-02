@@ -5,7 +5,6 @@ import FullBackground from "@/components/FullBackground"
 import VisionMission from "@/components/VisionMission"
 import Achievement from "../sections/Achievement"
 import Challenges from "../sections/Challenges"
-import Partnership from "../sections/Partnership"
 
 const AboutUs = () => {
   return (
@@ -40,9 +39,6 @@ const AboutUs = () => {
     <Achievement />
     </div>
     <div className="bg-[#36600A]">
-    <Partnership />
-    </div>
-    <div>
       <Challenges />
     </div>
     </div>
