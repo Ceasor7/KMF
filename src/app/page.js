@@ -1,6 +1,7 @@
 import { InfiniteSlider } from '@/components/Carousel'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import SummaryBackground from '@/components/SummaryBackground'
 import Link from 'next/link'
 import { FaRegEnvelope } from "react-icons/fa"
 import CountDownClock from './sections/AboutUs'
@@ -14,8 +15,11 @@ const Home = () => {
       <section id='hero'>
       <Hero />
       </section>
-      <section id='about'>
+      <section id='about' className="bg-fixed bg-parallax bg-cover">
         <CountDownClock />
+      </section>
+      <section>
+        <SummaryBackground />
       </section>
       <section id='venues' className="bg-[#36600A]">
       <PerfomanceVenue />

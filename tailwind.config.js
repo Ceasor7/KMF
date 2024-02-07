@@ -21,6 +21,11 @@ module.exports = {
             },
           },
         },
+        backgroundImage: {
+          'parallax': 'url("/CountDown.jpg")',
+          'parallax1': 'url("/achivement.jpg")',
+          'parallax2': 'url("/FestivalMotto.jpg")'
+        }
      },
   plugins: [],
 }

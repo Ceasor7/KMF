@@ -4,10 +4,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const images = [
-  "/home.jpg",
-  "/home1.jpg",
-  "/home2.jpg",
-  "/home3.jpg",
+  "/Hero2.jpg",
+  "/Hero1.jpg",
+  "/Hero5.jpg",
+  "/Hero4.jpg",
+  "/Hero3.jpg",
 ];
 
 const ImageSlider = () => {
@@ -34,6 +35,7 @@ const ImageSlider = () => {
         alt={`Image ${currentIndex + 1}`}
         layout="fill"
         objectFit="cover"
+        className="flex justify-center"
       />
       <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
         <button onClick={prevImage}>
