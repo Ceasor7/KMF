@@ -29,7 +29,7 @@ const ImageSlider = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full h-96">
+    <div className="relative w-full h-screen">
       <Image
         src={images[currentIndex]}
         alt={`Image ${currentIndex + 1}`}

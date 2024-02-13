@@ -42,10 +42,10 @@ function NavbarFixed() {
 const [nav, setNav] = useState(false);
 
   return (
-    <nav className="fixed z-10 flex justify-between w-full px-8 py-2 top-4">
-      <div className="flex items-center gap-2 text-black sm:ml-16">
+    <nav className="fixed z-10 flex justify-between w-full px-8 py-6 top-0 bg-white shadow-md">
+      <Link href='/' className="flex items-center gap-2 text-black sm:ml-16">
         <Image src="/Logo_Black.png" alt="KMF" height={80} width={110} />
-      </div>
+      </Link>
       <ul className="sm:flex hidden items-center text-black sm:mr-16">
         <li className="px-5 font-custom bg-white rounded-md py-2 text-md ml-3 ">
           <Link href={"/"}>Home</Link>
@@ -56,9 +56,9 @@ const [nav, setNav] = useState(false);
         <li className="px-5 font-custom bg-white rounded-md py-2 text-md ml-3">
           <Link href={"/partnership"}>Partnership</Link>
         </li>
-        <li className="px-5 font-custom bg-white rounded-md py-2 text-md ml-3">
+        {/* <li className="px-5 font-custom bg-white rounded-md py-2 text-md ml-3">
           <Link href={"/leadership"}>Leadership</Link>
-        </li>
+        </li> */}
         <li className="px-5 font-custom bg-white rounded-md py-2 text-md ml-3">
           <Link href={"/contact"}>Contact</Link>
         </li>
@@ -76,7 +76,7 @@ const [nav, setNav] = useState(false);
           <a href="/" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Home </a>
           <a href="/about" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> About Us </a>
           <a href="/partnership" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Partnership  </a>
-          <a href="/leadership" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Leadership </a>
+          {/* <a href="/leadership" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Leadership </a> */}
           <a href="/contact" className="px-4 cursor-pointer capitalize py-6 text-4xl font-custom"> Contact </a>
         </div>
       )}

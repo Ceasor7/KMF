@@ -1,11 +1,13 @@
-import AboutDescriptionCard from "./AboutDescriptionCard"
+import AboutDescriptionCard from "@/components/AboutDescriptionCard"
 
-const Dates = () => {
+const PerformanceVenue = () => {
   return (
-    <div className="flex flex-col mt-16 mb-10 mx-6 lg:mx-20 px-6 lg:px-12">
-      <h2 className='mb-16 font-custom text-4xl lg:text-center font-semibold text-white'>
-        Dates<span className='text-white'> </span>
-      </h2>
+    <div className="flex flex-col mb-10 mx-5 py-32 px-6 ">
+      <div className='flex flex-col justify-center text-center'>
+        <h2 className='mb-16 font-custom text-4xl lg:text-center font-semibold text-white'>
+          Dates<span className='text-white'> </span>
+        </h2>
+      </div>
       <div className="mt-5 grid text-white lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 sm:gap-6 gap-14">
         <AboutDescriptionCard
           image="/KMF.jpg"
@@ -27,7 +29,8 @@ const Dates = () => {
         />
       </div>
     </div>
+
   )
 }
 
-export default Dates
+export default PerformanceVenue

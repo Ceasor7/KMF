@@ -30,26 +30,26 @@ const CountdownTimer = ({ targetDate }) => {
   }, [timeLeft]);
 
   return (
-    <div className="flex items-center justify-center space-x-2">
+    <div className="flex items-center justify-center space-x-8">
       <div className="text-center">
-      <div className="text-base sm:text-2xl font-custom">Months</div>
+        <div className="text-base sm:text-2xl font-custom">Months</div>
         <div className="font-bold text-4xl font-custom">{timeLeft.months}</div>
       </div>
       <div className="text-center">
-      <div className="text-base sm:text-2xl font-custom">Days</div>
-        <div className="font-bold text-4xl font-custom">{":"}{timeLeft.days}</div>
-      </div> 
-      <div className="text-center">
-      <div className="text-base sm:text-2xl font-custom">Hours</div>
-        <div className="font-bold text-4xl font-custom">{":"}{timeLeft.hours}</div>
+        <div className="text-base sm:text-2xl font-custom">Days</div>
+        <div className="font-bold text-4xl font-custom">{timeLeft.days}</div>
       </div>
       <div className="text-center">
-      <div className="text-base sm:text-2xl font-custom">Minutes</div>
-        <div className="font-bold text-4xl font-custom">{":"}{timeLeft.minutes}</div>
+        <div className="text-base sm:text-2xl font-custom">Hours</div>
+        <div className="font-bold text-4xl font-custom">{timeLeft.hours}</div>
       </div>
       <div className="text-center">
-      <div className="text-base sm:text-2xl font-custom">Seconds</div>
-        <div className="font-bold text-4xl font-custom">{":"}{timeLeft.seconds}</div>
+        <div className="text-base sm:text-2xl font-custom">Minutes</div>
+        <div className="font-bold text-4xl font-custom">{timeLeft.minutes}</div>
+      </div>
+      <div className="text-center">
+        <div className="text-base sm:text-2xl font-custom">Seconds</div>
+        <div className="font-bold text-4xl font-custom">{timeLeft.seconds}</div>
       </div>
     </div>
   );
